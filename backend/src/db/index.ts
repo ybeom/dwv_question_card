@@ -15,4 +15,5 @@ const connectMongoDB = async () => {
   });
 };
 
+export * from './models/userModel';
 export { connectMongoDB };

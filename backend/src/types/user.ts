@@ -4,5 +4,15 @@ export interface InterfaceUser extends Document {
   email: string;
   password: string;
   nickname: string;
-  deleted_at: Date;
+}
+
+export interface CreateUserDTO {
+  email: string;
+  password: string;
+  nickname: string;
+}
+
+export interface UserWithoutPassword {
+  email: string;
+  nickname: string;
 }
