@@ -3,8 +3,7 @@ import { logMessages } from '../util/logMessages';
 
 const connectMongoDB = async () => {
   const DB_URL: string = process.env.MONGODB_URL || `mongoDB 주소가 설정되지 않았습니다.`;
-
-  mongoose.set('strictQuery', true);
+  mongoose.set('strictQuery', false);
   mongoose.connect(DB_URL);
   const db = mongoose.connection;
   db.on('connected', () => {

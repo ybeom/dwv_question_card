@@ -6,7 +6,7 @@ declare global {
       NODE_ENV: 'development' | 'production' | 'stage';
       BACKEND_PORT: number;
       MONGODB_URL: string;
-      HASH_SALT: number;
+      HASH_SALT: string;
     }
   }
 }
